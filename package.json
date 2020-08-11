@@ -1,0 +1,24 @@
+{
+  "name": "stage-blocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack --config webpack.config.js",
+    "dev": "npx cross-env BABEL_ENV=default webpack --watch",
+    "build": "npx cross-env BABEL_ENV=default NODE_ENV=production webpack -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "@babel/core": "7.11.1",
+    "babel-loader": "8.1.0",
+    "@babel/plugin-transform-react-jsx": "7.10.4",
+    "@wordpress/babel-preset-default": "4.17.0",
+    "classnames": "2.2.6",
+    "cross-env": "7.0.2"
+  }
+}
